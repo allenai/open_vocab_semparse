@@ -3,7 +3,7 @@ package org.allenai.semparse.one_off
 import com.mattg.util.FileUtil
 
 import org.allenai.semparse.parse.Predicate
-import org.allenai.semparse.pipeline.Helper
+import org.allenai.semparse.pipeline.science_data.Helper
 
 object debug_format_to_training_data {
   val inputFile = "/home/mattg/clone/semparse/data/science_sentences.txt"
