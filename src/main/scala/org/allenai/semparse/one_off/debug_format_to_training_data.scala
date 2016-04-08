@@ -9,7 +9,7 @@ object debug_format_to_training_data {
   val inputFile = "/home/mattg/clone/semparse/data/science_sentences.txt"
   val outputFile = "/home/mattg/clone/semparse/data/science_sentences_training_data.txt"
   val fileUtil = new FileUtil
-  def main(args: Array[String]) {
+  def NOT_main(args: Array[String]) {
     val lines = fileUtil.readLinesFromFile(inputFile).par
     val parsed = lines.map(parseDebugLine)
     val outputLines = parsed.flatMap(Helper.logicalFormToTrainingData)
