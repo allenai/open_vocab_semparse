@@ -2,6 +2,7 @@ package org.allenai.semparse.one_off
 
 import com.mattg.util.FileUtil
 
+import org.allenai.semparse.parse.Atom
 import org.allenai.semparse.parse.Predicate
 import org.allenai.semparse.pipeline.science_data.Helper
 
@@ -27,9 +28,9 @@ object debug_format_to_training_data {
       val predicate = lf_field.substring(0, paren)
       val args = lf_field.substring(paren + 1).split(", ").map(arg => {
         if (arg.endsWith(")")) {
-          arg.substring(0, arg.length - 1)
+          Atom(arg.substring(0, arg.length - 1))
         } else {
-          arg
+          Atom(arg)
         }
       })
       Predicate(predicate, args.toSeq)
