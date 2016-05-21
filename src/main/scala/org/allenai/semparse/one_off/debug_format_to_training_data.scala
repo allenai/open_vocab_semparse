@@ -3,7 +3,9 @@ package org.allenai.semparse.one_off
 import com.mattg.util.FileUtil
 
 import org.allenai.semparse.parse.Atom
+import org.allenai.semparse.parse.Conjunction
 import org.allenai.semparse.parse.Predicate
+import org.allenai.semparse.parse.Logic
 import org.allenai.semparse.pipeline.science_data.Helper
 
 object debug_format_to_training_data {
@@ -17,13 +19,13 @@ object debug_format_to_training_data {
     fileUtil.writeLinesToFile(outputFile, outputLines.seq)
   }
 
-  def parseDebugLine(line: String): (String, Set[Predicate]) = {
+  def parseDebugLine(line: String): (String, Option[Logic]) = {
     val fields = line.split(" -> ")
     val sentence = fields(0)
-    if (fields.length == 1) return (sentence, Set())
+    if (fields.length == 1) return (sentence, None)
     val lf = fields(1)
     val lf_fields = lf.split("\\) ")
-    val predicates = lf_fields.map(lf_field => {
+    val predicates: Set[Logic] = lf_fields.map(lf_field => {
       val paren = lf_field.indexOf("(")
       val predicate = lf_field.substring(0, paren)
       val args = lf_field.substring(paren + 1).split(", ").map(arg => {
@@ -35,6 +37,6 @@ object debug_format_to_training_data {
       })
       Predicate(predicate, args.toSeq)
     }).toSet
-    (sentence, predicates)
+    (sentence, Some(Conjunction(predicates)))
   }
 }
