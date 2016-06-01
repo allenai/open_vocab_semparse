@@ -452,7 +452,7 @@ predicates \formalpredicate{architect} and \formalpredicate{architect\_N/N},
 respectively. This gives a set of counts \formalpredicate{count}($\pi$),
 \formalpredicate{count}($f$), and \formalpredicate{count}($\pi\land f$), for
 each predicate $\pi$ and feature $f$.  The features are then ranked by PMI for
-each feature by computing $\frac{\formalpredicate{count}(\pi\land
+each predicate by computing $\frac{\formalpredicate{count}(\pi\land
 f)}{\formalpredicate{count}(\pi)\formalpredicate{count}(f)}$.  After removing
 features with counts below a threshold, we pick the $k=100$ features with the
 highest PMI values for each predicate to use in our model.
