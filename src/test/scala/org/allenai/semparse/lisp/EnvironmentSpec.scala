@@ -1,4 +1,4 @@
-package org.allenai.semparse
+package org.allenai.semparse.lisp
 
 import org.scalatest._
 

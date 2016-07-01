@@ -1,4 +1,4 @@
-package org.allenai.semparse
+package org.allenai.semparse.kb_features
 
 import com.jayantkrish.jklol.models.DiscreteVariable
 import com.jayantkrish.jklol.tensor.SparseTensorBuilder

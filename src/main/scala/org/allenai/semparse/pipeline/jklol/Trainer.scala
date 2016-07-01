@@ -1,8 +1,9 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.jklol
 
 import java.io.File
 
-import org.allenai.semparse.Environment
+import org.allenai.semparse.lisp.Environment
+import org.allenai.semparse.pipeline.common._
 
 import com.mattg.util.FileUtil
 import com.mattg.util.JsonHelper

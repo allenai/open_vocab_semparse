@@ -1,11 +1,11 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.jklol
 
 import java.io.FileWriter
 import java.io.File
 
 import scala.collection.mutable
 
-import org.allenai.semparse.Environment
+import org.allenai.semparse.lisp.Environment
 
 import com.jayantkrish.jklol.lisp.ConsValue
 

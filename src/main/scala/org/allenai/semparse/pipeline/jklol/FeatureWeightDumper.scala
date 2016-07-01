@@ -1,8 +1,8 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.jklol
 
 import scala.collection.JavaConverters._
 
-import org.allenai.semparse.Environment
+import org.allenai.semparse.lisp.Environment
 
 import com.jayantkrish.jklol.lisp.ListParameterSpec
 import com.jayantkrish.jklol.lisp.SpecAndParameters

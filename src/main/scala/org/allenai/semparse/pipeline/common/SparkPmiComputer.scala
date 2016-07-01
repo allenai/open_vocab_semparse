@@ -1,4 +1,4 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.common
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
@@ -38,7 +38,7 @@ class SparkPmiComputer(
 
   // Note that some of these parameters have an underscore, and the computePmi method below passes
   // them on through as parameters.  This rather ugly design is because of serialization issues
-  // with Spark - before doing this, I would be "Task not serializable" errors.  If you know of a
+  // with Spark - before doing this, I would get "Task not serializable" errors.  If you know of a
   // better way to get around this, please tell.  I tried making SparkPmiComputer serializable, but
   // that didn't change anything.
 

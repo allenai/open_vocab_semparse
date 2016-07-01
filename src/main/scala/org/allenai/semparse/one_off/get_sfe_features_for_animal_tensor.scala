@@ -1,8 +1,8 @@
 package org.allenai.semparse.one_off
 
-import org.allenai.semparse.pipeline.base.PreFilteredFeatureComputer
-import org.allenai.semparse.pipeline.base.SparkPmiComputer
-import org.allenai.semparse.pipeline.base.TrainingDataFeatureComputer
+import org.allenai.semparse.pipeline.common.PreFilteredFeatureComputer
+import org.allenai.semparse.pipeline.common.SparkPmiComputer
+import org.allenai.semparse.pipeline.common.TrainingDataFeatureComputer
 
 import com.mattg.util.Dictionary
 import com.mattg.util.FileUtil

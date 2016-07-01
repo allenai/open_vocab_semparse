@@ -1,4 +1,4 @@
-package org.allenai.semparse
+package org.allenai.semparse.lisp
 
 import java.util.{List => JList}
 
@@ -14,6 +14,8 @@ import com.jayantkrish.jklol.lisp.EvalContext
 import com.jayantkrish.jklol.lisp.LispUtil
 import com.jayantkrish.jklol.lisp.ParametricBfgBuilder
 import com.jayantkrish.jklol.lisp.SpecAndParameters
+
+import org.allenai.semparse.kb_features.SfeFeatureComputer
 
 class CreateSfeFeatureComputer extends AmbFunctionValue {
   override def apply(argumentValues: JList[Object], c: EvalContext, b: ParametricBfgBuilder) = {

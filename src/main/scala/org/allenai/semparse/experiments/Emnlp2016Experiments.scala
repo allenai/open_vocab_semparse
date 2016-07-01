@@ -3,11 +3,12 @@ package org.allenai.semparse.pipeline.acl2016
 import org.json4s._
 import org.json4s.JsonDSL._
 
-import org.allenai.semparse.pipeline.base._
+import org.allenai.semparse.pipeline.common._
+import org.allenai.semparse.pipeline.jklol._
 
 import com.mattg.util.FileUtil
 
-object Acl2016Experiments {
+object Emnlp2016Experiments {
 
   val fileUtil = new FileUtil
 

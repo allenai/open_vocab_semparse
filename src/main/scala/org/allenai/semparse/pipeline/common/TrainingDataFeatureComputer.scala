@@ -1,4 +1,4 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.common
 
 import edu.cmu.ml.rtw.pra.experiments.Outputter
 import edu.cmu.ml.rtw.pra.experiments.RelationMetadata
@@ -20,6 +20,7 @@ import org.json4s._
 // of registry for Steps, where you can specify which types are available for a Step's
 // dependencies.
 import org.allenai.semparse.pipeline.science_data.KbGraphCreator
+import org.allenai.semparse.pipeline.jklol.TrainingDataProcessor
 
 import scala.collection.mutable
 
@@ -134,14 +135,14 @@ class TrainingDataFeatureComputer(
   override val inProgressFile = s"$outDir/tdfc_in_progress"
   override val name = "Training data feature computer"
   val (midInputs, midOutputs) = if (computeForMidOrMidPair.contains("mid")) {
-    (Set((midFile, trainingDataProcessor)), Set(midFeatureFile))
+    (Set[(String, Option[Step])]((midFile, trainingDataProcessor)), Set[String](midFeatureFile))
   } else {
-    (Set(), Set())
+    (Set[(String, Option[Step])](), Set[String]())
   }
   val (midPairInputs, midPairOutputs) = if (computeForMidOrMidPair.contains("mid pair")) {
-    (Set((midPairFile, trainingDataProcessor)), Set(midPairFeatureFile))
+    (Set[(String, Option[Step])]((midPairFile, trainingDataProcessor)), Set[String](midPairFeatureFile))
   } else {
-    (Set(), Set())
+    (Set[(String, Option[Step])](), Set[String]())
   }
   override val inputs = Set((graphDirectory, graphCreator)) ++ midInputs ++ midPairInputs
   override val outputs = midOutputs ++ midPairOutputs

@@ -1,8 +1,6 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.jklol
 
 import collection.mutable
-
-import edu.cmu.ml.rtw.pra.experiments.ExperimentScorer
 
 import com.mattg.util.FileUtil
 import com.mattg.pipeline.MetricOutputter

@@ -1,4 +1,4 @@
-package org.allenai.semparse.pipeline.base
+package org.allenai.semparse.pipeline.jklol
 
 import collection.mutable
 
@@ -10,11 +10,6 @@ import org.json4s.DefaultFormats
 import org.json4s._
 import org.json4s.JsonDSL._
 import org.json4s.native.JsonMethods.parse
-
-// TODO(matt): I don't much care for this import...  The alternative, I think, is to have some kind
-// of registry for Steps, where you can specify which types are available for a Step's
-// dependencies.
-import org.allenai.semparse.pipeline.science_data.ScienceSentenceProcessor
 
 // I was was tired of having such a nasty pipeline of so many different scripts to run to get this
 // working.  So, I moved Jayant's data processing script from python to scala.  I didn't change
@@ -155,7 +150,8 @@ class TrainingDataProcessor(
     case jval => {
       (jval \ "type") match {
         case JString("science sentence processor") => {
-          Some(new ScienceSentenceProcessor(jval.removeField(_._1 == "type"), fileUtil))
+          // TODO(matt): this is likely a little bit broken, but I'm not using this anymore.
+          Some(new LogicalFormToTrainingData(jval.removeField(_._1 == "type"), fileUtil))
         }
         case _ => throw new IllegalStateException("unrecognized training data creator")
       }
