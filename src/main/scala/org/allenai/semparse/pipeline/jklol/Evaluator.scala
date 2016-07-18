@@ -47,7 +47,7 @@ class Evaluator(
           case JArray(values) => values.map(_.extract[String]).toSet
           case _ => Set[String]()
         }
-        (queryExpression -> (correctIds.toSet, incorrectIds.toSet))
+        (queryExpression, (correctIds.toSet, incorrectIds.toSet))
       })
     }).toSeq
   }

@@ -101,7 +101,7 @@ class Tester(
   override val inProgressFile = outputFile.replace("output.txt", "in_progress")
   override val name = "Model tester"
 
-  val modelInputs = if (modelType == "baseline") {
+  val modelInputs: Set[(String, Option[Step])] = if (modelType == "baseline") {
     Set((baselineModelFile, None))  // the baseline code is currently still in python...
   } else {
     if (ensembledEvaluation) {
@@ -113,7 +113,7 @@ class Tester(
       Set((serializedModelFile, Some(trainer)))
     }
   }
-  override val inputs =
+  override val inputs: Set[(String, Option[Step])] =
     handwrittenLispFiles.map((_, None)).toSet ++
     Set((sfeSpecFile, None), (trainingDataFile, None), (queryFile, None)) ++
     dataFiles.map((_, Some(processor))).toSet ++
