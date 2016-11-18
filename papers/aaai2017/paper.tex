@@ -451,11 +451,11 @@ predicate models.
 A key benefit of our predicate models is that they are able to assign scores to entity pairs that
 were never seen in the training data. Distributional models have no learned vectors for these
 entity pairs and therefore assume $\prob(r(e_1,e_2)) = 0$ for unseen entity pairs $(e_1,e_2)$. This
-limits the recall of these models when it is applied to question answering, as entity pairs will
-not have been observed for many correct, but rare entity answers. In contrast, because our models
-have access to a large KB, the formal component of the model can always give a score to any entity
-pair in the KB.  This allows our model to considerably improve question answering performance on
-rare entities.
+limits the recall of these models when applied to question answering, as entity pairs will not have
+been observed for many correct, but rare entity answers. In contrast, because our models have
+access to a large KB, the formal component of the model can always give a score to any entity pair
+in the KB.  This allows our model to considerably improve question answering performance on rare
+entities.
 
 It would be computationally intractable to consider \emph{all} Freebase entities as answers to
 queries, and so we use a simple candidate entity generation technique to consider only a small set
@@ -476,7 +476,7 @@ which is held out.  The system must propose a ranked list of Freebase entities t
 left by the held out entity, and the predicted entities are then judged manually for correctness.
 We compare our proposed models, which combine distributional and formal elements, with a purely
 distributional baseline from prior work.  All of the data and code used in these experiments is
-available at [url withheld for review].
+available at http://github.com/allenai/open\_vocab\_semparse.
 
 \subsection{Data}
 
@@ -506,11 +506,12 @@ We compare three models in our experiments: (1) the distributional model of Kris
 Mitchell, described in \secref{jayant-semparse}, which is the current state-of-the-art method for
 open vocabulary semantic parsing; (2) a formal model (new to this work), where the distributional
 parameters $\theta$ and $\phi$ in \secref{method} are fixed at zero; and (3) the combined model
-described in \secref{method} (also new to this work).  Except where noted, all experiments use our
-modified logical forms (\secref{better-lfs}) and our entity proposal mechanism
-(\secref{better-candidates}).  We do not compare against any traditional semantic parsers, as more
-than half of the questions in our dataset are not answerable by Freebase queries, and so are out of
-scope for those parsers~\cite{krishnamurthy-2015-semparse-open-vocabulary}.
+described in \secref{method} (also new to this work).  In each of these models, we used vectors of
+size 300 for all embeddings.  Except where noted, all experiments use our modified logical forms
+(\secref{better-lfs}) and our entity proposal mechanism (\secref{better-candidates}).  We do not
+compare against any traditional semantic parsers, as more than half of the questions in our dataset
+are not answerable by Freebase queries, and so are out of scope for those
+parsers~\cite{krishnamurthy-2015-semparse-open-vocabulary}.
 
 \subsection{Methodology}
 
@@ -704,10 +705,11 @@ on embedding the entities and relations in a
 KB~\cite{riedel-2013-mf-universal-schema,nickel-2011-rescal,%
 bordes-2013-transe,nickel-2014-are,toutanova-2015-joint-text-kb-embedding}, as well as work on
 graph-based methods for reasoning with
-KBs~\cite{lao-2010-original-pra,gardner-2014-vector-space-pra,neelakantan-2015-rnn-kbc}.  Our
-combination of embedding methods with graph-based methods in this paper is suggestive of how one
-could combine the two in methods for KB completion.  Initial work exploring this direction has
-already been done by Toutanova and Chen~\shortcite{toutanova-2015-observed-vs-latent-kbc}.
+KBs~\cite{lao-2010-original-pra,gardner-2014-vector-space-pra,neelakantan-2015-rnn-kbc,%
+bornea-2015-relational-path-mining}.  Our combination of embedding methods with graph-based methods
+in this paper is suggestive of how one could combine the two in methods for KB completion.  Initial
+work exploring this direction has already been done by Toutanova and
+Chen~\shortcite{toutanova-2015-observed-vs-latent-kbc}.
 
 %Finally, our work is conceptually related to many methods that aim to learn word embeddings that
 %are informed by some kind of external knowledge~\cite{faruqui-2015-retrofitting-word-vectors,%
@@ -739,7 +741,9 @@ representing a much broader class of concepts while still using the KB when it i
 Furthermore, it is capable of using the KB even when the meaning of the language cannot be exactly
 represented by a KB predicate, which is a common occurrence. We believe that this kind of approach
 could significantly expand the applicability of semantic parsing techniques to more complex domains
-where the assumptions of traditional techniques are too limiting.
+where the assumptions of traditional techniques are too limiting.  We are actively exploring
+applying these techniques to science question answering~\cite{clark-2013-kb-requirements-for-qa},
+for example, where existing KBs provide only partial coverage of the questions.
 
 %\section*{Acknowledgments}
 
