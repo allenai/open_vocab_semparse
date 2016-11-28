@@ -1,0 +1,253 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Berant \bgroup et al\mbox.\egroup
+  }{2013}]{berant-2013-semantic-parsing-qa}
+Berant, J.; Chou, A.; Frostig, R.; and Liang, P.
+\newblock 2013.
+\newblock Semantic parsing on freebase from question-answer pairs.
+\newblock In {\em EMNLP},  1533--1544.
+
+\bibitem[\protect\citeauthoryear{Bollacker \bgroup et al\mbox.\egroup
+  }{2008}]{freebase-2008-bollacker}
+Bollacker, K.; Evans, C.; Paritosh, P.; Sturge, T.; and Taylor, J.
+\newblock 2008.
+\newblock Freebase: a collaboratively created graph database for structuring
+  human knowledge.
+\newblock In {\em Proceedings of SIGMOD}.
+
+\bibitem[\protect\citeauthoryear{Bordes \bgroup et al\mbox.\egroup
+  }{2013}]{bordes-2013-transe}
+Bordes, A.; Usunier, N.; Garcia-Duran, A.; Weston, J.; and Yakhnenko, O.
+\newblock 2013.
+\newblock Translating embeddings for modeling multi-relational data.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  2787--2795.
+
+\bibitem[\protect\citeauthoryear{Bornea and
+  Barker}{2015}]{bornea-2015-relational-path-mining}
+Bornea, M., and Barker, K.
+\newblock 2015.
+\newblock Relational path mining in structured knowledge.
+\newblock In {\em Proceedings of the 8th International Conference on Knowledge
+  Capture}, K-CAP 2015,  14:1--14:7.
+\newblock New York, NY, USA: ACM.
+
+\bibitem[\protect\citeauthoryear{Choi, Kwiatkowski, and
+  Zettlemoyer}{2015}]{choi-2015-semantic-parsing-partial-ontologies}
+Choi, E.; Kwiatkowski, T.; and Zettlemoyer, L.
+\newblock 2015.
+\newblock Scalable semantic parsing with partial ontologies.
+\newblock In {\em Proceedings of ACL}.
+
+\bibitem[\protect\citeauthoryear{Clark, Harrison, and
+  Balasubramanian}{2013}]{clark-2013-kb-requirements-for-qa}
+Clark, P.; Harrison, P.; and Balasubramanian, N.
+\newblock 2013.
+\newblock A study of the knowledge base requirements for passing an elementary
+  science test.
+\newblock In {\em Proceedings of the 2013 workshop on Automated knowledge base
+  construction},  37--42.
+\newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Dong \bgroup et al\mbox.\egroup
+  }{2015}]{dong-2015-freebase-qa-mccnn}
+Dong, L.; Wei, F.; Zhou, M.; and Xu, K.
+\newblock 2015.
+\newblock Question answering over freebase with multi-column convolutional
+  neural networks.
+\newblock In {\em ACL}.
+
+\bibitem[\protect\citeauthoryear{Gabrilovich, Ringgaard, and
+  Subramanya}{2013}]{gabrilovich-2013-clueweb-entity-linking}
+Gabrilovich, E.; Ringgaard, M.; and Subramanya, A.
+\newblock 2013.
+\newblock Facc1: Freebase annotation of clueweb corpora, version 1 (release
+  date 2013-06-26, format version 1, correction level 0).
+\newblock {\em Note: http://lemurproject. org/clueweb09/FACC1/Cited by} 5.
+
+\bibitem[\protect\citeauthoryear{Gardner and Mitchell}{2015}]{gardner-2015-sfe}
+Gardner, M., and Mitchell, T.
+\newblock 2015.
+\newblock Efficient and expressive knowledge base completion using subgraph
+  feature extraction.
+\newblock In {\em Proceedings of EMNLP}.
+\newblock Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Gardner \bgroup et al\mbox.\egroup
+  }{2014}]{gardner-2014-vector-space-pra}
+Gardner, M.; Talukdar, P.; Krishnamurthy, J.; and Mitchell, T.
+\newblock 2014.
+\newblock Incorporating vector space similarity in random walk inference over
+  knowledge bases.
+\newblock In {\em Proceedings of EMNLP}.
+\newblock Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Gardner}{2015}]{gardner-2015-thesis}
+Gardner, M.
+\newblock 2015.
+\newblock {\em Reading and Reasoning with Knowledge Graphs}.
+\newblock Ph.D. Dissertation, Carnegie Mellon University.
+
+\bibitem[\protect\citeauthoryear{Krishnamurthy and
+  Mitchell}{2012}]{krishnamurthy-2012-semantic-parsing}
+Krishnamurthy, J., and Mitchell, T.~M.
+\newblock 2012.
+\newblock Weakly supervised training of semantic parsers.
+\newblock In {\em Proceedings of the 2012 Joint Conference on Empirical Methods
+  in Natural Language Processing and Computational Natural Language Learning},
+  754--765.
+\newblock Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Krishnamurthy and
+  Mitchell}{2014}]{krishnamurthy-2014-joint-ccg}
+Krishnamurthy, J., and Mitchell, T.~M.
+\newblock 2014.
+\newblock Joint syntactic and semantic parsing with combinatory categorial
+  grammar.
+\newblock In {\em Proceedings of the 52nd Annual Meeting of the Association for
+  Computational Linguistics (ACL)}.
+
+\bibitem[\protect\citeauthoryear{Krishnamurthy and
+  Mitchell}{2015}]{krishnamurthy-2015-semparse-open-vocabulary}
+Krishnamurthy, J., and Mitchell, T.~M.
+\newblock 2015.
+\newblock Learning a compositional semantics for {Freebase} with an open
+  predicate vocabulary.
+\newblock {\em Transactions of the Association for Computational Linguistics}
+  3:257--270.
+
+\bibitem[\protect\citeauthoryear{Kwiatkowski \bgroup et al\mbox.\egroup
+  }{2013}]{kwiatkowski-2013-ontology-matching}
+Kwiatkowski, T.; Choi, E.; Artzi, Y.; and Zettlemoyer, L.
+\newblock 2013.
+\newblock Scaling semantic parsers with on-the-fly ontology matching.
+\newblock In {\em Proceedings of the 2013 Conference on Empirical Methods in
+  Natural Language Processing}.
+\newblock Citeseer.
+
+\bibitem[\protect\citeauthoryear{Lao and Cohen}{2010}]{lao-2010-original-pra}
+Lao, N., and Cohen, W.~W.
+\newblock 2010.
+\newblock Fast query execution for retrieval models based on path-constrained
+  random walks.
+\newblock In {\em Proceedings of the 16th ACM SIGKDD international conference
+  on Knowledge discovery and data mining},  881--888.
+\newblock ACM.
+
+\bibitem[\protect\citeauthoryear{Lewis and
+  Steedman}{2013}]{lewis-2013-combined-distributional-and-logical-semantics}
+Lewis, M., and Steedman, M.
+\newblock 2013.
+\newblock Combined distributional and logical semantics.
+\newblock {\em TACL} 1:179--192.
+
+\bibitem[\protect\citeauthoryear{Li \bgroup et al\mbox.\egroup
+  }{2015}]{li-2015-semantic-parsing-scfg}
+Li, J.; Zhu, M.; Lu, W.; and Zhou, G.
+\newblock 2015.
+\newblock Improving semantic parsing with enriched synchronous context-free
+  grammar.
+\newblock In {\em EMNLP}.
+
+\bibitem[\protect\citeauthoryear{Neelakantan, Roth, and
+  McCallum}{2015}]{neelakantan-2015-rnn-kbc}
+Neelakantan, A.; Roth, B.; and McCallum, A.
+\newblock 2015.
+\newblock Compositional vector space models for knowledge base completion.
+\newblock In {\em ACL 2015}.
+\newblock Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Nickel, Jiang, and
+  Tresp}{2014}]{nickel-2014-are}
+Nickel, M.; Jiang, X.; and Tresp, V.
+\newblock 2014.
+\newblock Reducing the rank in relational factorization models by including
+  observable patterns.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  1179--1187.
+
+\bibitem[\protect\citeauthoryear{Nickel, Tresp, and
+  Kriegel}{2011}]{nickel-2011-rescal}
+Nickel, M.; Tresp, V.; and Kriegel, H.-P.
+\newblock 2011.
+\newblock A three-way model for collective learning on multi-relational data.
+\newblock In {\em Proceedings of the 28th international conference on machine
+  learning (ICML-11)},  809--816.
+
+\bibitem[\protect\citeauthoryear{Reddy \bgroup et al\mbox.\egroup
+  }{2016}]{reddy-2016-dep-lambda}
+Reddy, S.; T{\"a}ckstr{\"o}m, O.; Collins, M.; Kwiatkowski, T.; Das, D.;
+  Steedman, M.; and Lapata, M.
+\newblock 2016.
+\newblock Transforming dependency structures to logical forms for semantic
+  parsing.
+\newblock {\em TACL} 4:127--140.
+
+\bibitem[\protect\citeauthoryear{Reddy, Lapata, and
+  Steedman}{2014}]{reddy-2014-graph-matching}
+Reddy, S.; Lapata, M.; and Steedman, M.
+\newblock 2014.
+\newblock Large-scale semantic parsing without question-answer pairs.
+\newblock {\em TACL} 2:377--392.
+
+\bibitem[\protect\citeauthoryear{Riedel \bgroup et al\mbox.\egroup
+  }{2013}]{riedel-2013-mf-universal-schema}
+Riedel, S.; Yao, L.; McCallum, A.; and Marlin, B.~M.
+\newblock 2013.
+\newblock Relation extraction with matrix factorization and universal schemas.
+\newblock In {\em Proceedings of NAACL-HLT}.
+
+\bibitem[\protect\citeauthoryear{Toutanova and
+  Chen}{2015}]{toutanova-2015-observed-vs-latent-kbc}
+Toutanova, K., and Chen, D.
+\newblock 2015.
+\newblock Observed versus latent features for knowledge base and text
+  inference.
+\newblock In {\em ACL workshop on on Continuous Vector Space Models and Their
+  Compositionality}.
+
+\bibitem[\protect\citeauthoryear{Toutanova \bgroup et al\mbox.\egroup
+  }{2015}]{toutanova-2015-joint-text-kb-embedding}
+Toutanova, K.; Chen, D.; Pantel, P.; Poon, H.; Choudhury, P.; and Gamon, M.
+\newblock 2015.
+\newblock Representing text for joint embedding of text and knowledge bases.
+\newblock In {\em EMNLP}.
+
+\bibitem[\protect\citeauthoryear{West \bgroup et al\mbox.\egroup
+  }{2014}]{west-2014-kbc-via-qa}
+West, R.; Gabrilovich, E.; Murphy, K.; Sun, S.; Gupta, R.; and Lin, D.
+\newblock 2014.
+\newblock Knowledge base completion via search-based question answering.
+\newblock In {\em WWW}.
+
+\bibitem[\protect\citeauthoryear{Yao and
+  Durme}{2014}]{yao-2014-info-extraction-freebase-qa}
+Yao, X., and Durme, B.~V.
+\newblock 2014.
+\newblock Information extraction over structured data: Question answering with
+  freebase.
+\newblock In {\em ACL}.
+
+\bibitem[\protect\citeauthoryear{Yih \bgroup et al\mbox.\egroup
+  }{2015}]{yih-2015-semparse-query-graph}
+Yih, W.; Chang, M.-W.; He, X.; and Gao, J.
+\newblock 2015.
+\newblock Semantic parsing via staged query graph generation: Question
+  answering with knowledge base.
+\newblock In {\em ACL}.
+
+\bibitem[\protect\citeauthoryear{Zelle and Mooney}{1996}]{zelle-1996-geoquery}
+Zelle, J.~M., and Mooney, R.~J.
+\newblock 1996.
+\newblock Learning to parse database queries using inductive logic programming.
+\newblock In {\em AAAI}.
+
+\bibitem[\protect\citeauthoryear{Zettlemoyer and
+  Collins}{2005}]{zettlemoyer-2005-ccg}
+Zettlemoyer, L.~S., and Collins, M.
+\newblock 2005.
+\newblock Learning to map sentences to logical form: Structured classification
+  with probabilistic categorial grammars.
+\newblock In {\em UAI}.
+
+\end{thebibliography}
