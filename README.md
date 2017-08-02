@@ -11,7 +11,13 @@ derived from the language itself, then we _learn the meaning_ of those predicate
 where typical semantic parsers learn the _mapping_ from language onto predicates with a known
 meaning, we do a simple mapping onto predicates whose meaning is then _learned_.
 
+Usage instructions to be written.  If anyone ever wants to use this, let me (Matt) know, and I'll
+see what I can do about getting some instructions up here.
+
 ## Old instructions for reproducing Jayant's TACL 2015 paper
+
+NOTE: These don't work anymore!  You have to check out an older version of the code to use these
+instructions.
 
 ### Getting the data
 
