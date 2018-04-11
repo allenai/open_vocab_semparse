@@ -16,10 +16,6 @@ import com.mattg.pipeline.Step
 
 import org.json4s._
 
-// TODO(matt): I don't much care for this import...  The alternative, I think, is to have some kind
-// of registry for Steps, where you can specify which types are available for a Step's
-// dependencies.
-import org.allenai.semparse.pipeline.science_data.KbGraphCreator
 import org.allenai.semparse.pipeline.jklol.TrainingDataProcessor
 
 import scala.collection.mutable
@@ -104,7 +100,8 @@ class TrainingDataFeatureComputer(
     case jval => {
       (jval \ "type") match {
         case JString("kb graph creator") => {
-          Some(new KbGraphCreator(jval.removeField(_._1 == "type"), fileUtil))
+          throw new IllegalStateException("This was removed...")
+          //Some(new KbGraphCreator(jval.removeField(_._1 == "type"), fileUtil))
         }
         case _ => throw new IllegalStateException("unrecognized training data creator")
       }

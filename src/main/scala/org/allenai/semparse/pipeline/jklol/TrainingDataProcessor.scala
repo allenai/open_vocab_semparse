@@ -151,7 +151,8 @@ class TrainingDataProcessor(
       (jval \ "type") match {
         case JString("science sentence processor") => {
           // TODO(matt): this is likely a little bit broken, but I'm not using this anymore.
-          Some(new LogicalFormToTrainingData(jval.removeField(_._1 == "type"), fileUtil))
+          //Some(new LogicalFormToTrainingData(jval.removeField(_._1 == "type"), fileUtil))
+          throw new IllegalStateException("This was removed")
         }
         case _ => throw new IllegalStateException("unrecognized training data creator")
       }

@@ -157,6 +157,7 @@ object get_sfe_features_for_animal_tensor {
       })
       for ((instance, subgraph) <- subgraphs) {
         for (relation <- relationFeatures.keys) {
+          /*
           val filteredSubgraph = featureGenerator.filterSubgraph(instance, subgraph, relation)
           val features = featureGenerator.extractFeaturesAsStrings(instance, filteredSubgraph)
           val sourceIndex = entityDict.getIndex(graph.getNodeName(instance.source))
@@ -171,6 +172,7 @@ object get_sfe_features_for_animal_tensor {
               }
             }
           }
+          */
         }
       }
       done += chunkSize
